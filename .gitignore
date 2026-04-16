@@ -1,0 +1,8 @@
+node_modules/
+assets/screenshots/explore/
+assets/screenshots/debug-*
+*.mjs
+src/
+portfolio.pdf
+package.json
+package-lock.json
