@@ -22,18 +22,16 @@
 
 ## Larchive — 해운물류 AI 스타트업
 
-> **소속**: Larchive (심플로지스)
-
-해운물류 AI 스타트업 Larchive에서 데이터 수집부터 ML 모델, 대시보드, 챗봇까지 서비스 전체를 설계·개발·운영해 왔습니다.
+해운물류 AI 스타트업 [Larchive](https://larchive.simplogis.com)에서 데이터 수집부터 ML 모델, 대시보드, 챗봇까지 서비스 전체를 설계·개발·운영해 왔습니다.
 
 ---
 
-### 해양 모니터링 대시보드 (Beta)
+### 항만 모니터링
 > Larchive (심플로지스)
 
 `React 19` `FastAPI` `Mapbox GL` `Docker` `네이버 클라우드(NCP)`
 
-**풀스택 설계·개발·배포·운영** | 2025 – 현재 | 🟡 Beta 운영 중
+**AI 기능 설계·백엔드 API·파이프라인** | 2025 – 현재 | 🟢 운영 중
 
 - 전 세계 선박 실시간 위치 추적 + 항만 혼잡도 모니터링 대시보드
 - 혼잡도(port congestion), RT 혼잡(port units), 해역 뷰 + 세부항만 상세 분석 (Port Calls, 주간 혼잡도 리포트)
@@ -43,7 +41,7 @@
 - 네이버 클라우드(NCP) 프로덕션/개발 서버 이중 배포, Docker Compose 기반 인프라
 
 <p align="center">
-  <img src="assets/screenshots/port-combined.png" width="100%" alt="항만 모니터링 — 세계 지도 혼잡도 + 대륙별 비교분석 + 바 차트" />
+  <img src="assets/screenshots/port-combined.png" width="100%" alt="항만 모니터링 — 세계 지도 혼잡도 + 부산 세부항만 + 대륙별 비교분석" />
 </p>
 
 ---
@@ -65,17 +63,21 @@
 ### 운임시황 모니터링
 > Larchive (심플로지스)
 
-`SetFit` `Python` `NLP` `프로덕션 배포`
+`SetFit` `LLM Agent` `Python` `NLP` `통계 모델링` `SCFI` `LCI`
 
-**AI 모델 설계·학습·배포·파이프라인** | 2024 – 현재 | 🟢 운영 중
+**AI 모델 설계·학습·배포·파이프라인** | 2023 – 현재 | 🟢 운영 중
 
 - 뉴스·시황 리포트를 해운 시장 상황으로 자동 분류하는 ML 모델
 - SetFit(Few-shot Sentence Transformer) 기반, 소량 데이터로 고성능 달성
+- LLM 에이전트 기반 브리핑 자동 생성 + 시나리오 분석
 - 브리핑 → 예측분석(해상/항공) → 시나리오분석 → 이슈분석까지 다층 분석 서비스
-- 네이버 클라우드 프로덕션 서버에서 실시간 서비스 운영 중
+- SCFI(상하이 종합운임지수), LCI 등 주요 해운 지수 예측 모델 개발
+- 통계+ML 하이브리드 접근, 95% 신뢰구간 월간 예측
+- 7개 글로벌 운임 지수(FBX, XSI, KCCI 등) 추세 분석 시스템
+- 성균관대 협력 연구: SHAP 기반 모델 해석성 논문 공저
 
 <p align="center">
-  <img src="assets/screenshots/freight-combined.png" width="100%" alt="운임시황 — Daily Overview 브리핑 + 이슈분석 (NLP 뉴스 분류)" />
+  <img src="assets/screenshots/freight-combined.png" width="100%" alt="운임시황 — 브리핑 + 예측분석(해상) 그래프 + 이슈분석" />
 </p>
 
 ---
@@ -93,22 +95,8 @@
 - 이슈추적: 카테고리별 리스크 버블 시각화 + 템플릿 기반 추적
 
 <p align="center">
-  <img src="assets/screenshots/risk-combined.png" width="100%" alt="리스크 — 이슈분석 (필터/태그/주의도) + 이슈추적 (버블 차트)" />
+  <img src="assets/screenshots/risk-combined.png" width="100%" alt="리스크 — 조기경보 + 이슈분석 + 이슈추적" />
 </p>
-
----
-
-### 컨테이너 운임 예측 모델
-> Larchive (심플로지스)
-
-`통계 모델링` `시계열 분석` `SCFI` `LCI`
-
-**모델 설계·검증** | 2023 – 현재 | 🟢 내부 운영 중
-
-- SCFI(상하이 종합운임지수), LCI 등 주요 해운 지수 예측 모델 개발
-- 통계+ML 하이브리드 접근, 95% 신뢰구간 월간 예측
-- 7개 글로벌 운임 지수(FBX, XSI, KCCI 등) 추세 분석 시스템
-- 성균관대 협력 연구: SHAP 기반 모델 해석성 논문 공저
 
 ---
 
@@ -141,12 +129,11 @@
 ## 기타 경험
 
 ### 의료 텍스트 분석 — SmartTA
-
-> **소속**: 미소정보기술
+> 미소정보기술
 
 `Python` `NLP` `의료 데이터`
 
-**전처리 모듈 개발, TA 파이프라인 설계** | 2019 – 2020
+**전처리 파이프라인 적용** | 2019 – 2020
 
 - 병원 판독소견서(영상의학과 리포트 등) 비정형 텍스트 전처리 파이프라인 적용 (TA 엔진은 회사 자체 엔진 사용)
 - 당시에는 규칙 기반 전처리 + 키워드 추출 방식이었으나, 현재는 LLM/임베딩 기반으로 근본적으로 접근이 달라짐
@@ -156,8 +143,7 @@
 ---
 
 ### 이마트 데이터 분석
-
-> **소속**: KAIST [DSAIL](https://dsail.kaist.ac.kr/) (박찬영 교수 연구실) · 신세계아이앤씨 산학협력
+> KAIST [DSAIL](https://dsail.kaist.ac.kr/) (박찬영 교수 연구실) · 신세계아이앤씨 산학협력
 
 `Python` `Jupyter` `Pandas` `GNN` `Taxonomy Construction`
 
