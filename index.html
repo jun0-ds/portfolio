@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>류준영 — AI/Data Engineer</title>
+<style>
+  /* ── Reset & Base ── */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #1a1a1a; background: #fafafa; line-height: 1.7;
+  }
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── Layout ── */
+  .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+
+  /* ── Header ── */
+  .header { margin-bottom: 40px; }
+  .header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; }
+  .header .contact { font-size: 0.9rem; color: #666; margin-bottom: 16px; }
+  .header .contact a { color: #666; }
+  .header .identity {
+    font-size: 1.05rem; color: #333; line-height: 1.8;
+    border-left: 3px solid #2563eb; padding-left: 16px;
+  }
+
+  /* ── Section ── */
+  .section { margin-bottom: 48px; }
+  .section-title {
+    font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;
+    padding-bottom: 8px; border-bottom: 2px solid #e5e7eb;
+  }
+  .section-subtitle { font-size: 0.9rem; color: #666; margin-bottom: 24px; }
+
+  /* ── Project Card ── */
+  .project { margin-bottom: 40px; }
+  .project h3 {
+    font-size: 1.15rem; font-weight: 600; margin-bottom: 4px; color: #111;
+  }
+  .project .meta { font-size: 0.85rem; color: #888; margin-bottom: 12px; }
+  .project .badge {
+    display: inline-block; font-size: 0.75rem; font-weight: 600;
+    padding: 2px 8px; border-radius: 10px; margin-left: 6px;
+  }
+  .badge-live { background: #dcfce7; color: #166534; }
+  .badge-done { background: #e0e7ff; color: #3730a3; }
+
+  .psr { margin-bottom: 16px; }
+  .psr p { margin-bottom: 6px; font-size: 0.95rem; }
+  .psr strong { color: #111; }
+  .psr .label {
+    display: inline-block; width: 42px; font-weight: 700; font-size: 0.85rem;
+  }
+  .psr .label-problem { color: #dc2626; }
+  .psr .label-solution { color: #2563eb; }
+  .psr .label-result { color: #059669; }
+
+  .project .screenshot {
+    width: 100%; border-radius: 8px; border: 1px solid #e5e7eb;
+    margin-top: 12px;
+  }
+
+  /* ── Collapsible ── */
+  details { margin-bottom: 16px; }
+  details summary {
+    cursor: pointer; font-weight: 600; font-size: 0.95rem;
+    color: #444; padding: 8px 0;
+  }
+  details summary:hover { color: #111; }
+  details[open] summary { margin-bottom: 8px; }
+  details .detail-content { padding-left: 16px; font-size: 0.9rem; }
+  details .detail-content li { margin-bottom: 4px; }
+
+  /* ── Skills Table ── */
+  .skills-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .skills-table th {
+    text-align: left; padding: 8px 12px; background: #f3f4f6;
+    border-bottom: 2px solid #d1d5db; font-weight: 600; width: 120px;
+  }
+  .skills-table td {
+    padding: 8px 12px; border-bottom: 1px solid #e5e7eb; color: #444;
+  }
+
+  /* ── Divider ── */
+  hr { border: none; border-top: 1px solid #e5e7eb; margin: 40px 0; }
+
+  /* ── Print Styles ── */
+  @media print {
+    body { background: white; font-size: 11pt; }
+    .container { max-width: 100%; padding: 0; }
+    .header h1 { font-size: 18pt; }
+    .header .identity { font-size: 10.5pt; }
+    .section-title { font-size: 14pt; }
+    .project h3 { font-size: 12pt; }
+    .psr p { font-size: 10pt; }
+    .project .screenshot { max-height: 280px; object-fit: contain; }
+    details { display: block; }
+    details summary { display: none; }
+    details .detail-content { padding-left: 0; }
+    a { color: #1a1a1a; }
+    .badge { border: 1px solid #ccc; }
+
+    .project { page-break-inside: avoid; }
+    .section { page-break-inside: avoid; }
+    h2, h3 { page-break-after: avoid; }
+
+    .no-print { display: none; }
+  }
+
+  @page {
+    size: A4;
+    margin: 20mm 15mm;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <h1>류준영 — AI/Data Engineer</h1>
+    <div class="contact">
+      joseph.jy.ryu@gmail.com · Seoul, South Korea
+      · <a href="https://linkedin.com/in/junyoung-ryu-422501117">LinkedIn</a>
+      · <a href="https://github.com/jun0-ds">GitHub</a>
+    </div>
+    <div class="identity">
+      데이터를 모아 구조화하고, 반복되는 판단을 AI로 자동화합니다.<br>
+      해운물류에서 의사결정 소요시간을 300시간에서 30분으로 줄이는 시스템을 만들었고,<br>
+      의료·교육·유통 데이터에도 같은 접근을 적용해 왔습니다.
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- 의료 AI -->
+  <div class="section">
+    <h2 class="section-title">의료 텍스트 AI — 병원 판독소견서를 구조화된 데이터로</h2>
+    <div class="section-subtitle">미소정보기술 | AI 엔지니어 | 2019 – 2020</div>
+
+    <div class="psr">
+      <p><span class="label label-problem">문제</span> 병원 판독소견서(영상의학과 리포트 등)는 비정형 텍스트라 검색·분류·통계가 불가능하다.</p>
+      <p><span class="label label-solution">해결</span> 의료 도메인 특화 텍스트 전처리 파이프라인을 구축하여, 비정형 판독소견서를 구조화된 데이터로 변환. 약어·혼용 표기 등 의료 텍스트 특유의 노이즈 처리.</p>
+    </div>
+
+    <div class="psr">
+      <p><strong>KISTI 연구자료 검색 챗봇</strong> — 한국과학기술정보연구원(KISTI) 대전 센터에 대화형 연구자료 검색 챗봇 API 납품. 챗봇 내부 가비지 필터링을 LM/AI로 개발.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Larchive -->
+  <div class="section">
+    <h2 class="section-title">Larchive — 해운물류 AI 스타트업</h2>
+    <div class="section-subtitle">
+      <a href="https://larchive.simplogis.com">Larchive</a>에서 AI 모델·LLM 에이전트·데이터 파이프라인을 중심으로 서비스를 설계·개발해 왔으며, 프론트엔드·인프라 영역도 서비스 개발 과정에서 실무 경험을 쌓았습니다.
+    </div>
+
+    <!-- 항만 -->
+    <div class="project">
+      <h3>항만 모니터링 <span class="badge badge-live">운영 중</span></h3>
+      <div class="psr">
+        <p><span class="label label-problem">문제</span> 해운사·화주는 전 세계 항만의 혼잡·지연 상황을 파악하기 위해 수작업으로 여러 소스를 확인해야 했다. 항만이 수백 개인 상황에서 수동 모니터링은 불가능.</p>
+        <p><span class="label label-solution">해결</span> 700개 항만 혼잡도를 자동 수집하고, 70,000척 선박을 실시간 추적하는 모니터링 대시보드 구축. 13개 주요 초크포인트 30분 주기 수집, 이상 탐지 자동 알림.</p>
+        <p><span class="label label-result">결과</span> 삼성전자 DA, 현대글로비스 캐나다 등 기업 고객에 항만 지연 예측 모델 납품.</p>
+      </div>
+      <img class="screenshot" src="assets/screenshots/port-combined.png" alt="항만 모니터링">
+    </div>
+
+    <!-- 운임 -->
+    <div class="project">
+      <h3>운임 예측 + 자동 리포팅 <span class="badge badge-live">운영 중</span></h3>
+      <div class="psr">
+        <p><span class="label label-problem">문제</span> 해운 운임 예측은 뉴스·지표·시장 상황을 종합해야 하는데, 분석가가 수작업으로 읽고 판단하는 데 평균 300시간 이상 소요. 정기 리포트 작성도 매번 반복.</p>
+        <p><span class="label label-solution">해결</span> ML 모델로 뉴스·시황을 자동 분류하고, LLM 에이전트가 브리핑·예측·시나리오 분석·리포트까지 자동 생성. 매일 8,000건 글로벌 공급망 이슈 자동 수집·분석.</p>
+        <p><span class="label label-result">결과</span> 의사결정 소요시간 300시간 → 30분 이내. 주요 운임 지수 95% 신뢰구간 월간 예측. 성균관대 협력 논문 공저.</p>
+      </div>
+      <img class="screenshot" src="assets/screenshots/freight-combined.png" alt="운임시황 모니터링">
+    </div>
+
+    <!-- 리스크 -->
+    <div class="project">
+      <h3>공급망 리스크 조기 경보 <span class="badge badge-live">운영 중</span></h3>
+      <div class="psr">
+        <p><span class="label label-problem">문제</span> 전쟁·파업·자연재해 등 공급망 리스크는 터진 뒤에야 파악된다. 사전 감지가 안 되면 대응이 늦고, 재정적 손실로 이어진다.</p>
+        <p><span class="label label-solution">해결</span> 900개 이상 소스에서 뉴스 자동 수집, NER로 리스크 행위자 추출, Neo4j 그래프 분석으로 심각도 스코어링하는 조기 경보 시스템 구축.</p>
+        <p><span class="label label-result">결과</span> TIPS 정부 연구과제 선정. 국내 특허 3건.</p>
+      </div>
+      <img class="screenshot" src="assets/screenshots/risk-combined.png" alt="공급망 리스크 모니터링">
+    </div>
+
+    <!-- 더 보기 -->
+    <details class="no-print">
+      <summary>더 보기 — AI 챗봇, 리포팅 에이전트 아키텍처</summary>
+      <div class="detail-content">
+        <div class="project">
+          <h3>AI 에이전트 챗봇 <span class="badge badge-live">운영 중</span></h3>
+          <p style="margin-bottom:12px;">자연어로 물어보면 데이터를 찾아서 답해주는 사내 AI 에이전트. 웹 대시보드 + Slack 채널 통합 운영. 격리된 Docker 샌드박스 내 코드 실행.</p>
+          <img class="screenshot" src="assets/screenshots/chatbot-slack.png" alt="AI 챗봇">
+        </div>
+        <div class="project">
+          <h3>리포팅 에이전트 아키텍처 <span class="badge badge-live">운영 중</span></h3>
+          <p style="margin-bottom:12px;">데이터 수집 → 정제 → 분석 → 리포트 발행까지 전 과정을 LLM 에이전트가 자동화. Orchestrator가 질문 난이도를 판별하여 Light/Deep Path로 분기.</p>
+          <img class="screenshot" src="assets/screenshots/reporting-workflow.png" alt="리포팅 에이전트" style="max-width:50%;">
+        </div>
+      </div>
+    </details>
+  </div>
+
+  <hr>
+
+  <!-- 기타 경험 -->
+  <div class="section">
+    <h2 class="section-title">기타 경험</h2>
+
+    <details>
+      <summary>데이터마케팅코리아 — ML/통계 분석가 · 인턴 | 2017 – 2018</summary>
+      <div class="detail-content">
+        <ul>
+          <li>서울시 공공자전거 이용 예측 및 패턴 클러스터링</li>
+          <li>소셜미디어 키워드 추출·분석 (tf-idf, TextRank)</li>
+          <li>Active Learning 기반 효율적 데이터 라벨링 및 모델 학습</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>이마트 데이터 분석 — KAIST DSAIL · 신세계아이앤씨 산학협력 | 2021</summary>
+      <div class="detail-content">
+        <ul>
+          <li>이마트24 상품 마스터(49,299개) + 거래 데이터(845,626건) 탐색적 분석</li>
+          <li>그래프 기반 택소노미 구축 연구 (GNN 기법 적용)</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>수능 등급컷 예측 · 비문학 지문 개발 | 2023 – 현재</summary>
+      <div class="detail-content">
+        <ul>
+          <li>수능 데이터 기반 1등급컷 시뮬레이션 예측 모델 (공개 데모 배포)</li>
+          <li>강남대성학원 수능 독서(비문학) 기술 지문 집필</li>
+        </ul>
+      </div>
+    </details>
+
+    <details>
+      <summary>메신저봇 플랫폼 — 아키텍처 설계·봇 개발 | 2026</summary>
+      <div class="detail-content">
+        <ul>
+          <li>디스코드 멀티게임 봇 플랫폼 — 사내 업무 에이전트로 응용 가능</li>
+          <li>Oracle Cloud 기반 24/7 봇 인프라 운영</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+
+  <hr>
+
+  <!-- Skills -->
+  <div class="section">
+    <h2 class="section-title">Technical Skills</h2>
+    <table class="skills-table">
+      <tr><th>Languages</th><td>Python, TypeScript, Rust, SQL</td></tr>
+      <tr><th>AI/ML</th><td>PyTorch, SetFit, OpenAI/Claude/Gemini API, LangChain, SHAP, NLP, Forecasting</td></tr>
+      <tr><th>Backend</th><td>FastAPI, SQLAlchemy, Firebase Auth, Redis, Neo4j, Milvus</td></tr>
+      <tr><th>Frontend</th><td>React 19, Vite, Mapbox GL, Tailwind CSS</td></tr>
+      <tr><th>Data</th><td>Pandas, Selenium, PowerBI, Jupyter</td></tr>
+      <tr><th>Infra</th><td>Docker, GCP, NCP, Oracle Cloud, systemd, GitHub Actions</td></tr>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>

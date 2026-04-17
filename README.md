@@ -4,7 +4,9 @@
 🔗 [LinkedIn](https://linkedin.com/in/junyoung-ryu-422501117) · 💻 [GitHub](https://github.com/jun0-ds)
 
 데이터를 모아 구조화하고, 반복되는 판단을 AI로 자동화합니다.
+
 해운물류에서 의사결정 소요시간을 300시간에서 30분으로 줄이는 시스템을 만들었고,
+
 의료·교육·유통 데이터에도 같은 접근을 적용해 왔습니다.
 
 ---
