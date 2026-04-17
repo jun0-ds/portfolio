@@ -161,12 +161,14 @@
 </details>
 
 <details>
-<summary><b>데이터마케팅코리아</b> — QA 엔지니어 | 2020 – 2021</summary>
+<summary><b>데이터마케팅코리아</b> — ML/통계 분석가 · 인턴 | 2017 – 2018</summary>
 
-`Python` `NLP` `QA` `엑소브레인`
+`Python` `NLP` `Active Learning` `tf-idf` `TextRank`
 
-- 엑소브레인(Exobrain) 프로젝트 QA — 한국어 자연어 질의응답 시스템 품질 검증
-- ETRI 엑소브레인 기반 자연어 처리 파이프라인 테스트 및 평가
+- 서울시 공공자전거 이용 예측 및 패턴 클러스터링
+- 소셜미디어 키워드 추출·분석 (tf-idf, TextRank)
+- Active Learning 기반 효율적 데이터 라벨링 및 모델 학습
+- 공공 데이터 분석 및 마케팅 인텔리전스
 
 </details>
 
