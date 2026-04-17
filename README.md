@@ -12,7 +12,7 @@
 | 영역 | 스택 |
 |------|------|
 | **Languages** | Python, TypeScript, Rust, SQL |
-| **AI/ML** | PyTorch, SetFit, OpenAI/Claude/Gemini API, LangChain, SHAP, TTS/Vision AI |
+| **AI/ML** | PyTorch, SetFit, OpenAI/Claude/Gemini API, LangChain, SHAP, NLP, Forecasting |
 | **Backend** | FastAPI, SQLAlchemy, Firebase Auth, Redis, Neo4j, Milvus |
 | **Frontend** | React 19, Vite, Mapbox GL, Tailwind CSS |
 | **Data** | Pandas, Selenium, PowerBI, Jupyter |
