@@ -60,10 +60,6 @@
 - 격리된 Docker 샌드박스 내 코드 실행 기능
 - 행동 구조화(sonmat) + 멀티디바이스 메모리(bobusang) 기술 적용
 
-<p align="center">
-  <img src="assets/screenshots/chatbot-slack.png" width="100%" alt="AI 에이전트 챗봇 — Slack 연동 자연어 데이터 질의" />
-</p>
-
 </details>
 
 <details>
@@ -138,6 +134,10 @@
 - 정기 리포트 자동 발행 + Slack 배포
 - 데이터 수집 → 정제 → 분석 → 리포트 전 과정 자동화
 
+<p align="center">
+  <img src="assets/screenshots/chatbot-slack.png" width="100%" alt="리포팅 에이전트 — Slack 자동 리포트 배포" />
+</p>
+
 </details>
 
 ---
@@ -157,6 +157,16 @@
 #### KISTI 챗봇 API
 - 한국과학기술정보연구원(KISTI) 대전 센터용 대화형 챗봇 API 개발
 - 챗봇 내부 가비지 필터링 파트를 LM/AI로 개발
+
+</details>
+
+<details>
+<summary><b>데이터마케팅코리아</b> — QA 엔지니어 | 2020 – 2021</summary>
+
+`Python` `NLP` `QA` `엑소브레인`
+
+- 엑소브레인(Exobrain) 프로젝트 QA — 한국어 자연어 질의응답 시스템 품질 검증
+- ETRI 엑소브레인 기반 자연어 처리 파이프라인 테스트 및 평가
 
 </details>
 
