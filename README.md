@@ -48,7 +48,7 @@
 **결과**: 리포트 작성 완전 자동화, Slack 정기 배포. 🟢 운영 중
 
 <p align="center">
-  <img src="assets/screenshots/reporting-workflow.png" width="50%" alt="리포팅 에이전트 — Orchestrator + Light/Deep Path 아키텍처" />
+  <img src="assets/screenshots/reporting-combined.png" width="100%" alt="리포팅 에이전트 — Orchestrator + Light/Deep Path 아키텍처" />
 </p>
 
 ### 항만 모니터링 — 전 세계 항만 혼잡을 실시간으로 파악할 방법이 없다
