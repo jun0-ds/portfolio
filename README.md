@@ -60,6 +60,10 @@
 - 격리된 Docker 샌드박스 내 코드 실행 기능
 - 행동 구조화(sonmat) + 멀티디바이스 메모리(bobusang) 기술 적용
 
+<p align="center">
+  <img src="assets/screenshots/chatbot-slack.png" width="100%" alt="AI 에이전트 챗봇 — Slack 연동 자연어 데이터 질의" />
+</p>
+
 </details>
 
 <details>
@@ -135,7 +139,7 @@
 - 데이터 수집 → 정제 → 분석 → 리포트 전 과정 자동화
 
 <p align="center">
-  <img src="assets/screenshots/chatbot-slack.png" width="100%" alt="리포팅 에이전트 — Slack 자동 리포트 배포" />
+  <img src="assets/screenshots/reporting-workflow.png" width="100%" alt="리포팅 에이전트 — Orchestrator + Light/Deep Path 아키텍처" />
 </p>
 
 </details>
