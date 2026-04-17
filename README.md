@@ -60,6 +60,10 @@
 - 격리된 Docker 샌드박스 내 코드 실행 기능
 - 행동 구조화(sonmat) + 멀티디바이스 메모리(bobusang) 기술 적용
 
+<p align="center">
+  <img src="assets/screenshots/chatbot-slack.png" width="100%" alt="AI 에이전트 챗봇 — Slack 연동 자연어 데이터 질의" />
+</p>
+
 </details>
 
 <details>
@@ -76,7 +80,7 @@
 - LLM 에이전트 기반 브리핑 자동 생성 + 시나리오 분석
 - 브리핑 → 예측분석(해상/항공) → 시나리오분석 → 이슈분석까지 다층 분석 서비스
 - SCFI(상하이 종합운임지수), LCI 등 주요 해운 지수 예측 모델 개발
-- 통계+ML 하이브리드 접근, 95% 신뢰구간 월간 예측
+- 통계+DL 하이브리드 접근, 95% 신뢰구간 월간 예측
 - 7개 글로벌 운임 지수(FBX, XSI, KCCI 등) 추세 분석 시스템
 - 성균관대 협력 연구: SHAP 기반 모델 해석성 논문 공저
 
