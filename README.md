@@ -63,26 +63,29 @@
   <img src="assets/screenshots/risk-combined.png" width="100%" alt="리스크 — 조기경보 + 이슈분석 + 이슈추적" />
 </p>
 
-<details>
-<summary><b>더 보기</b> — AI 챗봇, 리포팅 에이전트 아키텍처</summary>
-
 ### AI 에이전트 챗봇 — 데이터가 있어도 비개발자가 직접 조회할 수 없다
 
-자연어로 물어보면 데이터를 찾아서 답해주는 사내 AI 에이전트. 웹 대시보드 + Slack 채널 통합 운영. 격리된 Docker 샌드박스 내 코드 실행 기능. 🟢 운영 중
+**문제**: 데이터베이스에 정보가 있어도 비개발자는 직접 조회할 수 없다. 매번 개발자에게 요청해야 하는 병목.
+
+**해결**: 자연어로 물어보면 데이터를 찾아서 답해주는 사내 AI 에이전트. 웹 대시보드 + Slack 채널 통합 운영. 격리된 Docker 샌드박스 내 코드 실행.
+
+**결과**: 비개발자가 직접 데이터 질의 가능. 🟢 운영 중
 
 <p align="center">
   <img src="assets/screenshots/chatbot-slack.png" width="100%" alt="AI 에이전트 챗봇 — Slack 연동 자연어 데이터 질의" />
 </p>
 
-### 리포팅 에이전트 아키텍처
+### 리포팅 에이전트 — 정기 리포트를 사람이 매번 쓰는 건 비효율이다
 
-데이터 수집 → 정제 → 분석 → 리포트 발행까지 전 과정을 LLM 에이전트가 자동화. Orchestrator가 질문 난이도를 판별하여 Light/Deep Path로 분기. 🟢 운영 중
+**문제**: 운임 시황·관세·공급망 뉴스를 종합한 정기 리포트를 분석가가 매번 수작업으로 작성.
+
+**해결**: 데이터 수집 → 정제 → 분석 → 리포트 발행까지 전 과정을 LLM 에이전트가 자동화. Orchestrator가 질문 난이도를 판별하여 Light/Deep Path로 분기.
+
+**결과**: 리포트 작성 완전 자동화, Slack 정기 배포. 🟢 운영 중
 
 <p align="center">
   <img src="assets/screenshots/reporting-workflow.png" width="50%" alt="리포팅 에이전트 — Orchestrator + Light/Deep Path 아키텍처" />
 </p>
-
-</details>
 
 ---
 
